@@ -9,4 +9,8 @@ console.log('"ip","date","method","url","status","time"');
 
 app.use(express.static('public', {extensions: ['html']}));
 
+app.get('*', function(request, response) {
+  response.redirect('/');
+});
+
 app.listen(8080);
