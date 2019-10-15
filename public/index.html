@@ -105,35 +105,31 @@
         <div class="container">
             <div class="row">
                 <br/><br/><br/>
+                <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" style="bottom:0px; right:0px;">
+                    <a class="a2a_button_facebook"></a>
+                    <a class="a2a_button_twitter"></a>
+	            <a class="a2a_button_reddit"></a>
+	            <a class="a2a_button_email"></a>
+                    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                </div>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+
                 <iframe id="iframe" width="100%" height="1100px" src="" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                 <script>
-                    url = document.URL.split('?')[1];
-                    if(url) {
-                        document.getElementById('iframe').src = url;
+                    var urlParams = new URLSearchParams(window.location.search);
+                    if(urlParams.has('url')) {
+                        document.getElementById('iframe').src = urlParams.get('url');
                     } else {
                         window.location.replace('https://blastnotifications.com');
+                    }
+                    if(urlParams.has('title')) {
+                        document.title = urlParams.get('title');
                     }
                 </script>
                 <br/><br/>
             </div>
         </div>
     </header>
-
-    <section id="contact" class="contact bg-primary">
-        <div class="container">
-            <!-- AddToAny BEGIN -->
-            <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="width:180px; margin: auto;"><br/>
-                <h2>Share This!</h2>
-                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-                <a class="a2a_button_facebook"></a>
-                <a class="a2a_button_twitter"></a>
-	            <a class="a2a_button_reddit"></a>
-                <a class="a2a_button_linkedin"></a>
-            </div><br>
-            <script async src="https://static.addtoany.com/menu/page.js"></script>
-            <!-- AddToAny END -->
-        </div>
-    </section>
 
     <footer>
         <div class="container">
