@@ -13,7 +13,7 @@
     <meta name="referrer" content="origin">
     <meta property="og:site_name" content="BlastNotifications.com">
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://blastnotifications.com/about">
+    <link rel="canonical" href="http://view.blastnotifications.com">
     <script type="application/ld+json">{"\u0040context":"http:\/\/schema.org","\u0040type":"WebSite","name":"Blast Notifications","url":"https:\/\/blastnotifications.com\/"}</script>
 
     <title>Blast Notifications</title>
@@ -108,7 +108,7 @@
                 <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" style="bottom:0px; right:0px;">
                     <a class="a2a_button_facebook"></a>
                     <a class="a2a_button_twitter"></a>
-	            <a class="a2a_button_reddit"></a>
+	            <a class="a2a_button_linkedin"></a>
 	            <a class="a2a_button_email"></a>
                     <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
                 </div>
@@ -126,6 +126,20 @@
                         document.title = urlParams.get('title');
                     }
                 </script>
+                <div id="disqus_thread"></div>
+                <script>
+                var disqus_config = function () {
+                    this.page.url = document.URL;
+                    this.page.identifier = urlParams.get('url');
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://blastnotifications-1.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 <br/><br/>
             </div>
         </div>
