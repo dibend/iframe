@@ -119,6 +119,7 @@
                     var urlParams = new URLSearchParams(window.location.search);
                     if(urlParams.has('url')) {
                         document.getElementById('iframe').src = urlParams.get('url');
+                        document.getElementById('iframe').style.height = .8*window.innerHeight+'px';
                     } else {
                         window.location.replace('https://blastnotifications.com');
                     }
